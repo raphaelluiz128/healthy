@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
-import { View, StatusBar } from 'react-native';
+import { View, StatusBar, ScrollView } from 'react-native';
 
 import Filters from '~/components/Filters';
 import Activities from '~/components/Activities';
 import styles from './styles';
 
 import data from '~/data';
+
 
 const gymImage = require('~/assets/images/gym.png');
 const cyclingImage = require('~/assets/images/cycling.png');
@@ -49,11 +50,13 @@ export default class Home extends Component {
     return (
       <View style={styles.container}>
         <StatusBar barStyle="light-content" />
-        {<Filters data={data.filters}/>}
-        <Activities imageUrl={gymImage} />
-        <Activities imageUrl={cyclingImage} />
-        <Activities imageUrl={runningImage} />
-        <Activities imageUrl={yogaImage} />
+        {<Filters data={data.filters} />}
+        <ScrollView>
+          <Activities imageUrl={gymImage} title="Musculação" />
+          <Activities imageUrl={cyclingImage} title="Pedalar" />
+          <Activities imageUrl={runningImage} title="Corrida" />
+          <Activities imageUrl={yogaImage} title="Yoga" />
+        </ScrollView>
       </View>
     );
   }
