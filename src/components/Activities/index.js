@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { View, Text, Image } from 'react-native';
 
-import ActivitiesInfo from '~/components/ActivitiesInfo';
+import ActivitiesInfo from '../ActivitiesInfo';
 
 import styles from './styles';
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 
-import { colors } from '~/styles';
+import { colors } from './styles';
 
-import Home from '~/pages/Home';
+import Home from './pages/Home';
 
-import Menu from '~/components/Menu';
-import Configuration from '~/components/Configuration';
+import Menu from './components/Menu';
+import Configuration from './components/Configuration';
 
 const Routes = createAppContainer(
   createStackNavigator(

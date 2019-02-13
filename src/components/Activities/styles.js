@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { colors, fonts } from '~/styles';
+import { colors, fonts } from '../../styles';
 
 const styles = StyleSheet.create({
   circle: {
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.family.Montserrat,
     fontSize: 20,
     fontWeight: fonts.weight.bold,
-    textTransform: 'uppercase',
+    // textTransform: 'uppercase',
   },
 });
 

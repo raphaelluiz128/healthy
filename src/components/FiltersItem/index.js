@@ -5,7 +5,7 @@ import { Image, TouchableOpacity, View } from 'react-native';
 
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import Filters from '~/components/Filters';
+import Filters from '../Filters';
 
 import styles from './styles';
 
@@ -43,7 +43,6 @@ export default class FiltersItem extends Component {
           colors={['#7F38F4', '#FD3C29']}
           style={styles.container}
         >
-          {console.tron.log(imageUrl)}
           <Image source={imageUrl} />
         </LinearGradient>
       </TouchableOpacity>

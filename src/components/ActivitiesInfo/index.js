@@ -2,9 +2,9 @@ import React from 'react';
 
 import { View, Text, Image } from 'react-native';
 
-import Bike from '~/assets/images/icones/bike.png';
-import Balance from '~/assets/images/icones/balance.png';
-import Time from '~/assets/images/icones/time.png';
+import Bike from '../../assets/images/icones/bike.png';
+import Balance from '../../assets/images/icones/balance.png';
+import Time from '../../assets/images/icones/time.png';
 
 import styles from './styles';
 
